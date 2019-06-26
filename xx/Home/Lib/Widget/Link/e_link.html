@@ -1,0 +1,12 @@
+<if condition="$links">
+<div class="link_box">
+    <div class="container">
+      <span class="link_title">LINK</span><button id="link_btn" class="glyphicon glyphicon-plus" aria-hidden="true"></button>
+      <span class="link_list">
+          <volist name='links' id='vo'>
+          <a target="_blank" href="<{$vo.eurl}>"><{$vo.ename}></a>
+          </volist> 
+      </span>
+    </div>
+</div>
+</if>

@@ -1,0 +1,3 @@
+<?php
+//000000086400a:5:{s:2:"id";i:1;s:4:"type";s:7:"product";s:4:"lang";s:1:"c";s:8:"bigclass";a:3:{i:0;a:7:{s:2:"id";s:1:"6";s:4:"name";s:15:"汽车总装线";s:5:"ename";s:24:"Automobile assembly line";s:3:"url";s:1:"2";s:3:"pid";s:1:"1";s:4:"sort";s:1:"1";s:4:"link";s:0:"";}i:1;a:7:{s:2:"id";s:1:"5";s:4:"name";s:21:"非标自动化设备";s:5:"ename";s:33:"Non-standard automation equipment";s:3:"url";s:1:"1";s:3:"pid";s:1:"1";s:4:"sort";s:1:"2";s:4:"link";s:0:"";}i:2;a:7:{s:2:"id";s:1:"7";s:4:"name";s:27:"自动化视觉检测设备";s:5:"ename";s:24:"Electric control cabinet";s:3:"url";s:1:"3";s:3:"pid";s:1:"1";s:4:"sort";s:1:"3";s:4:"link";s:0:"";}}s:10:"smallclass";N;}
+?>

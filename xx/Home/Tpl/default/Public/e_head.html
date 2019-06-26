@@ -1,0 +1,17 @@
+<header>
+    <div class="top_menu">
+      <div class="container">
+        <span class="top_name">Welcome: <{$Think.config.web_ename}></span>
+		<if condition="$Think.config.is_bilingual neq 0">
+        <div class="top_lang">Language: 
+          <a href="<{:W('Index',array('cnen'=>'cn','lang'=>'c'))}>" title="Chinese"><img src="../Public/images/Chinese.gif" alt="Chinese"></a>
+          ∷&nbsp;
+          <a href="<{:W('Index',array('cnen'=>'en','lang'=>'e'))}>" title="English"><img src="../Public/images/English.gif" alt="English"></a>
+        </div>
+		</if>
+      </div>
+    </div>
+  
+<{:W('Nav',array('lang'=>'e'))}>
+
+</header>

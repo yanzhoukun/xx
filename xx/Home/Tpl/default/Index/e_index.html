@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><{$Think.config.seo_etitle}></title>
+    <meta name="keywords" content="<{$Think.config.seo_ekeywords}>" />
+    <meta name="description" content="<{$Think.config.seo_edescription}>" />
+    <include file='Public:file'/>
+  </head>
+<body>
+
+<include file='Public:e_head'/>
+
+<{:W('Flash',array('type'=>1,'lang'=>'e'))}>
+<script type="text/javascript">
+    $('.bxslider').bxSlider({
+      adaptiveHeight: true,
+      infiniteLoop: true,
+      hideControlOnEnd: true,
+      auto:true
+    });
+</script>
+
+    <div class="product_bg">
+        <div class="container">    
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="product_index">
+                        <div class="product_head" data-move-y="-40px">
+                        <h2>FEATURED</h2>
+                        <span></span>
+                        <p>THE BEST PRODUCTS</p>
+                        </div>
+                            <div class="product_list">
+                            <{:W('List',array('table'=>'Product','bid'=>1,'id'=>1,'lang'=>'e'))}>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutus" style="background-image: url(__ROOT__/Uploads/<{:W('Flash',array('type'=>3,'id'=>8))}>); background-size: cover;background-attachment: fixed;background-color: #1A1A1A;">
+        <h2>ABOUT US</h2>
+        <p><{:W('About',array('id'=>25,'len'=>1000,'lang'=>'e'))}></p>
+        <a href="<{:W('Listhref',array('id'=>25,'lang'=>'e'))}>" class="btn btn-info view-all" role="button">VIEW ALL</a>
+    </div>
+
+    <div class="advantage">
+        <div class="advantage_head" data-move-y="-30px">
+            <h2>OUR ADVANTAGE</h2>
+        </div>
+        <div class="container advantage_list">    
+            <div class="row">
+                <{:W('Flash',array('type'=>2,'lang'=>'e'))}>
+            </div>
+        </div>
+    </div>
+
+    <div class="news_bg">
+        <div class="container">    
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="news_head" data-move-y="-50px">
+                            <h2>NEWS</h2>
+                            <span></span>
+                            <p>LATEST NEWS</p>
+                        </div>
+                        <{:W('List',array('table'=>'New','bid'=>2,'id'=>2,'lang'=>'e','moban'=>'e_index_new'))}>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <{:W('Link',array('lang'=>'e'))}>
+    <{:W('Tags',array('lang'=>'e'))}>
+
+    <script src="../Public/js/jquery.smoove.min.js"></script>
+    <script>$('.product_head,.product_img,.advantage_head,.advantage_col,.news_head,.news_index').smoove({offset:'10%'});</script>
+     
+    <include file='Public:e_foot'/>
+
+  </body>
+</html>
