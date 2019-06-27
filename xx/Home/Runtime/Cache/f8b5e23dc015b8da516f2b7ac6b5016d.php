@@ -68,6 +68,18 @@
         </div>
     </div>
 
+<div style="
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    padding: 5px;
+    top: 25px;
+    right: 10px;
+    ">
+    <p style="color: #ffffff">12312312</p >
+</div>
+
     <div class="aboutus" style="background-image: url(__ROOT__/Uploads/<?php echo W('Flash',array('type'=>3,'id'=>8));?>); background-size: cover;background-attachment: fixed;background-color: #1A1A1A;">
         <h2>ABOUT US</h2>
         <p><?php echo W('About',array('id'=>25,'len'=>1000,'lang'=>'e'));?></p>
